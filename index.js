@@ -5,7 +5,6 @@ var typed = new Typed('.text', {
   loop: true,
 });
 
-// scroll reveal
 ScrollReveal({
   // reset: true,
   distance: '80px',
@@ -19,9 +18,12 @@ ScrollReveal().reveal('.home, .services-box2, .main-text h2', {
 ScrollReveal().reveal('#portfolio, .contact-form, .services, .sub-title', {
   origin: 'bottom',
 });
-ScrollReveal().reveal('.services-box3, .about-text, #skills1', {
-  origin: 'left',
-});
+ScrollReveal().reveal(
+  '.services-box3, .about-text, #skills1, .contact-text h2',
+  {
+    origin: 'left',
+  }
+);
 ScrollReveal().reveal('.services-box1, .about-img, #skills2', {
   origin: 'right',
 });

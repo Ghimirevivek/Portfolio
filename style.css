@@ -473,19 +473,22 @@ section {
 .row {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
+  width: 400px;
+  height: 250px;
 }
 .row img {
   width: 100%;
   border-radius: 8px;
   display: block;
   transition: transform 0.5s;
+  height: 100%;
 }
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0a192f);
   position: absolute;
   border-radius: 8px;
   left: 0;
@@ -500,30 +503,32 @@ section {
   transition: height 0.5s;
 }
 .layer h5 {
-  color: #000;
-  font-size: 20px;
+  color: #b6c2e7;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 .layer p {
-  color: #000;
-  font-size: 1rem;
-  line-height: 1.8;
+  color: #5ae6c7;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 .layer i {
-  color: #ff004f;
+  color: #0a192f;
   margin-top: 20px;
-  font-size: 20px;
-  background: #fff;
-  width: 60px;
-  height: 60px;
+  font-size: 22px;
+  background: #8892b0;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 }
+
 .row:hover img {
   transform: scale(1.1);
+  opacity: 0.5;
 }
 .row:hover .layer {
   height: 100%;
@@ -534,12 +539,14 @@ section {
   align-items: center;
   gap: 3rem;
   padding-left: 30px;
-  margin-top: 130px;
+  margin-top: 320px;
 }
 .contact-text h2 {
   font-size: 90px;
   line-height: 1;
   text-align: center;
+  position: relative;
+  top: -30px;
 }
 .contact-text h2 span {
   color: #0ef;
